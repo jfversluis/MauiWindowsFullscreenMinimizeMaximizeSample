@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiWindowsFullscreenMinimizeMaximizeSample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Button
+                x:Name="ToggleMaximizeBtn"
+                Text="Toggle Maximize"
+                SemanticProperties.Hint="Toggles this window's maximize button"
+                Clicked="OnToggleMaximizeClicked"
+                HorizontalOptions="Center" />
+            
+            <Button
+                x:Name="ToggleMinimizeBtn"
+                Text="Toggle Minimize"
+                SemanticProperties.Hint="Toggles this window's minimize button"
+                Clicked="OnToggleMinimizeClicked"
+                HorizontalOptions="Center" />
+            
+            <Button
+                x:Name="ToggleFullscreenBtn"
+                Text="Toggle Fullscreen"
+                SemanticProperties.Hint="Toggles if this window should be shown fullscreen or as a regular window"
+                Clicked="OnToggleFullscreenClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
